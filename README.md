@@ -1,6 +1,18 @@
 # m
 📴
 
+## hardware
+- 4K display
+- Rectangular screen with rounded corners
+- Fingerprint reader on back side near camera
+- 3.5mm headphone jack
+- USB type-C port
+- Call speaker
+- Playback speaker
+- Microphone
+- Volume button
+- Power button
+
 ## [m-os](https://github.com/wavy-project/m/blob/master/m-os/features.txt)
 "emotive os" 🤳🏽based on [Android](https://source.android.com/)
 
