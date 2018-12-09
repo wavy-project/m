@@ -1,6 +1,7 @@
 # m
 📴
 
+## m-os
 emotive os" 🤳🏽
 
 [features](https://github.com/wavy-project/m/blob/master/m-os/features.txt)
