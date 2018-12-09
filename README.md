@@ -2,7 +2,7 @@
 📴
 
 ## m-os
-emotive os" 🤳🏽
+"emotive os" 🤳🏽based on [Android](https://source.android.com/)
 
 [features](https://github.com/wavy-project/m/blob/master/m-os/features.txt)
 
