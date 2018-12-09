@@ -3,9 +3,9 @@
 
 ## hardware
 - Rectangular 4K display with rounded corners
-- Fingerprint reader on back side near camera
 - Front camera
-- Back camera
+- Rear camera
+- Fingerprint reader on rear
 - 3.5mm headphone jack
 - USB type-C port
 - Call speaker
