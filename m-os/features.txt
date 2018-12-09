@@ -1,0 +1,414 @@
+"emotive os"
+
+
+note/notebook device should be designed around note taking
+
+
+(basis for a desktop os? designed for mobile first?)
+
+
+ui
+- all-black color scheme
+- navigation and status bar hidden when scrolling in all apps
+- darken + add grain to fade out a background (i.e. when notification drawer pulled down)
+- dashed header text (e.g. "day-15_sounds-of-tomorrow")
+- default animation to move a cell to the top of its table
+- default back navigation by swiping screen to the right
+- animated emojis
+
+  loading animations
+  - double circle-worm loader (like apple music for android)
+    - looks like a circle disappearing/reappearing while rotating
+
+  universal gestures
+  - press + hold + swipe to select multiple
+
+  questions
+  - whether four-across is a good width for a grid view because the average human cannot remember more than four or five things at a time
+
+
+os
+- device automatically mounts on both Mac and Windows
+- option to disable cursor blink (so cursor is steady, or strictly not present when keyboard is not present)
+- audio
+  - ability to mute an app (like game mode samsung galaxy note8) and allow audio to be played over (i.e. from music app)
+- screen brightness
+  - changes immediately in response to change in lighting -- in an easily demonstratable and repeatable way
+  - auto brightness -- keep track of your brightness adjustments and apply them automatically in similar lighting conditions
+- option to disable cursor blink (so cursor is steady, or strictly not present when keyboard is not present)
+- hard press opened apps, home, back/dismiss in their expected locations at the bottom of the screen
+
+
+home app
+- live apps tickets
+  - bottom left
+  
+    settings
+    - toggle off
+
+- to reveal all apps drawer:
+  - zoom in/out
+  - swipe up from the bottom
+  
+  notifications (settings) drawer
+  - brightness darkens automatically when 'more' button adjacent slider is tapped
+  - settings app is embedded in the notification screen
+  - ability to see all network activity live, per app
+  - tapping a quick-access setting highlights its corresponding status bar item(s)
+  
+    system settings
+    - add a settings app to the 'all apps' tray (turned off by default)
+    - app-specific notification tones
+
+      app manager
+        app detail view
+        - view in-app settings panel
+
+      bluetooth
+      - toggle independent volume control
+        - finer gradation if connected device matches phone's volume notches
+    
+      password storage
+      - saves locally
+      - can attach to os cloud account for regaining entry if password is forgotten (like Samsung Pass / Samsung account (Samsung Galaxy Note8 Android Oreo 8.0.0 Samsung Experience 9.0))
+
+      periodic reconnect
+      - set a time interval for the device to briefly reconnect to the network
+        - default interval: 20 min
+      - after one minute of network silence, device disconnects and timer starts
+      - if in airplane mode, Wi-Fi is used
+      - if not in airplane mode, select from:
+        - data
+        - Wi-Fi
+        - both
+      - one minute prior to reconnect, notification appears to snooze
+        - set snooze interval
+          - default: 5 min
+
+      sim password
+      - remember in pasword storage
+
+  open apps drawer
+  - close all apps by pulling down/up with two fingers
+  - close button is an x, bottom center
+    - option to hide it in settings
+
+  all apps drawer
+  - sorted alphabetically by default
+  - zoom in/out to reveal home
+
+    settings
+    - sort options:
+      - alphabetically
+        - folders first
+        - folders in alphabetical order
+      - date installed
+    - automatically group apps by same author in a folder
+
+
+calendar app
+- day view appears scrolled all the way to the bottom
+
+
+camera app
+- ability to keep flashlight on (for shooting in the dark)
+- detect shakiness and present alert:
+  - if your hand is shaking, just screenshot the camera app
+- pro mode:
+  - ability to set as default camera mode
+  - always preserves last used settings
+  - toggle save as jpg/jpg+raw/raw-only from pro mode
+  - if raw-only selected, burst mode photos are saved in raw format as well
+
+  settings
+  - default pro mode
+
+
+files app
+
+  hotbox
+  - alias folder for files intended to be viewed/shared later
+  - appears in share menu
+
+  settings
+  - hide hotbox in share menu
+
+- ability to view photo in gallery app
+- filename length is not limited
+- default file names are lowercase and dashed
+- present sequences of image/video/image-preview-able files as gridded thumbnails (the height of ( ? ) and occupying the width of) individual table view rows (each dedicated to the file name and file type icon of non-image-preview-able files)
+- online extension:
+  - like Dropbox
+  - versions all uploaded files and keeps old versions until they are intentionally deleted
+    - either like git, or via storing old versions in a "."-prefixed directory with the same name as the original file
+- ability to see file history
+  - changes to a file
+  - changes to a directory
+- ability to see usage statistics for any directory
+  - ability to compare multiple directories
+  - statistics shown:
+    - file count
+    - file count by type
+    - directory size
+    - directory size by type
+    - duplicate file counts
+      --> view duplicates in all locations
+- ability to unify duplicate files under a single symbolic link to one of the current locations
+
+
+flashlight app
+- LED turns off when sensor directly adjacent gets covered; turns right back on when uncovered, unless switched off
+
+
+gallery app
+- study lightroom; gather list of best features to port to mobile
+- ability to view photo in files app
+
+  settings
+  - toggle 'reveal file directory'
+    - if a subdirectory of a folder (album) contains gallery content (photos or videos), that subdirectory is shown as ..
+  - set how thumbnails are cropped from portrait/landscape images
+
+  albums view
+  - menu options:
+    - ability to edit album ordering (also activated by long press on an album)
+      - sub-menu options:
+        - reset to default (alphabetical)
+        - keep sorted by date modified
+        - camera and screenshots folders always remain at the top
+
+  album view
+  - when a photo is selected: ability to select the next _n_ photos
+  - when photos are already selected: ability to long press an unselected photo for standard options
+  - zoom in/out to change scope:
+    all --> by day --> by week --> by month --> by season [winter/spring/summer/fall, show start and end dates of each] --> by year)
+
+  gallery content detail view
+  - controls are part of white background view
+  - menu options:
+    - toggle background view color to any color via circular color picker and rgb (srgb) selector
+- anjmated real-time content update
+  - additions/deletions of any gallery content is detected
+  - same for media selection extension(s) for use by other apps (like samsung galaxy note8 running android nougat 7.1.1)
+  - ability to bookmark a photo and return to it
+    
+    file info detail view
+    - ability to copy all text shown in this view
+
+
+games
+- minesweeper app
+- snake app 馃悕
+
+
+keyboard app
+- learns typing style from the user -- caps/no caps; emoji/language/clipboard key/neither (wider space bar); detect language from typing; hide next word suggestion bar (for language(s) used by user) by swiping it down
+maps app
+- ability to export route as screenshot series/PDF for offline use
+
+
+messages app
+- 'mark all as read' button in notification
+- ability to reply in notification
+  - infinitely
+  - notification view saves draft
+  - notification reply text advances to the edge of the screen and then scrolls beyond it when typing a long message; whole message can be seen by swiping down
+- hour:minute:second delivered for sms/mms in conversation view
+- message detail view on tap (or from menu in photo detail view, with save, share)
+- links detected & web previews generated as user types (not just on paste)
+- swipe a message toward he opposite side of the screen to reply to it (like WhatsApp)
+  - over text message this appears as
+    >> Message being... [replied to, limited to two words]
+    Message being sent
+
+
+music app
+- use "track" rather than "song" throughout
+- skipping to next/previous track fades music between headphones in the direction of skipping
+- 2-level sideways scroll
+- ability to play audio from phone speaker
+
+  search
+  - local autocomplete supports artist + album name, artist + track name, album + track name
+  - search term at top of tracks/albums/artists detail view
+
+  playlists
+  - ability to export playlist as text file
+    - each line represents a track, formatted as follows:
+      Artist Name - "Track Name" (Album Name, <publication date>)
+  - ability to remove all duplicates from a playlist
+  - creating a playlist from a track pops up option to change playback to new playlist (such that it is now the playback queue)
+  - home screen of app is recent playlist (entire library, playlists included) ordered by date added and viewed as album covers 2 across (like apple music for android)
+    - this recent playlist supports pinning an album/playlist to the top of the scroll view
+  - (+/playlist logo) "track name" added to "playlist name" toast (bottom of screen? Side? Top? Center but user interaction disabled (i.e. like music app for ios but touches pass through toast)?)
+  - one playlist has entire play history
+  - one playlist has recently _accessed_ playlist (entire library, playlists included)
+
+    playlist view
+    - see playlists-contained-in as label tags on tracks (toggle off in settings)
+    - use album cover as check box when selecting album (like how profile photo/first letter of first name is used in Gmail app)
+    - eq bars on album cover -- same track twice in a playlist has matching eq bar -- if eq bars are random (as opposed to based on the track), set a seed for each track played
+
+  album view
+    tracks view
+    - select entire album by holding album cover/title cell
+      - album cover overlaid with check
+      - check appears next to all tracks
+
+  now playing
+  - access by dragging bottom bar up (apple music) OR just tapping bottom bar (samsung music)
+  - when track/artist/album name is too long it scrolls all the way to the left of the screen and loops back by coming from the right edge of the screen to its original mooring (a few dp in from the edge of the screen, where it would be if we abbreviated the name and appended ellipses, as in Apple Music for Android version 2.4.3 (630))
+  - display track #
+    - in album/playlist/discography
+  - edge lighting animation displays color by walking a point back and forth, top to bottom along the album cover
+    - ability to toggle a view of this over the album color
+      - cover is dimmed
+      - line at current point shows full brightness
+      - brightness fades as line trails off
+
+  queue
+  - ability to see tracks already played
+    - set limit in settings
+  - ability to reorder currently playing track
+
+  reach
+  - brain waves over the course of an album 鈥斺�� track + display
+
+  downloads (if included; unclear who would provide the service)
+  - app icon badged with number of downloads remaining
+
+
+notes app
+(note/notebook device should be designed around note taking)
+- escaping note marked front channel zooms to its place in the front channel
+- designed for high throughput (lots of new entries per unit time)
+- uses OCR to generate a text file for any image containing text
+- all data stored locally
+  - like files app, can backup data with cloud provider of choice (Dropbox, Google Drive)
+  - refresh with cloud copy via refresh button
+    - handle MERGE CONFLICTS (like git)
+
+  notes view
+  - ability to export notebook as zip:
+    - complete file heirarchy as zip
+    - notes retreived for a given search term
+    - individual color tag
+    - individual category
+  - most recently edited note moves to the top
+  - front channel and back channel notes look the same; only separated by visual divider
+    - assumption is that the user knows the distinction because they moved a note to a particular channel
+    - (no pin icon like Google Keep saves space for header text)
+  - ability to zoom out on notes (4 across --> 8 --> 16)
+    - only enabled when at least <row number> notes are present in both front and back channels
+  - minimap appears when scrolling (can toggle on/off)
+    
+    search
+    - option to include matches for search term with vowels removed
+
+  note detail view
+  - menu options:
+    - duplicate note
+    - settings:
+      - move checked items to bottom of note
+        - when note item is checked, 5 s graphical countdown takes place before item is moved
+  - ability to scroll side to side between notes
+  - checkboxes and text may be intermingled
+  - slide to indent checkbox task (disables vertical slide, locking task in place)
+  - ability to link gallery content to a string of text
+    - linked text becomes highlighted
+    - multiple images may be linked
+    - all linked images are previewed with a grid view of thumbnails at the bottom of the note
+      - resizable like gallery app
+      - default: four thumbnails across
+  - ability to insert gallery content inline
+    - resizable
+    - option to use thumbnail + filename
+  - ability to jump to linked/inserted gallery content file in files app
+    - link is symbolic and is preserved throughout life of file
+      - symbolic link ticket keeps metadata of gallery content file to allow:
+        - restoring link in the event file disappears and reappears
+        - user to restore link manually based on metadata
+
+  settings
+  - dark/rich color mode: default tag colors are swapped for more varied, tasteful ones
+  - move checked items to bottom of note by default
+    - (can also toggle per note)
+    - when this setting is changed, only un-toggled notes are updated
+  - reset all individual note checkbox preferences to default
+
+  notebook protocol
+  - file naming and organization scheme referred to as 'notebook protocol'
+  - allows archived notebooks to interoperate with command line interface for unix-based operating systems
+- Command line interface (CLI): a note-taking application for unix comprising a text file for each note
+  - the first line in the file is the header
+  - each subsequent line is considered text
+  - checkboxes are represented by "[ ]" and "[x]" for unchecked and checked items, respectively
+  - notes live in one of two bins: "active" and "archived"
+  - the active bin itself contains two partitions: "front channel" and "back channel"
+  - each note can be a member of one category (its subdirectory within the notes directory)
+    - a category is represented as a textual label above the note's header (like Samsung Notes version 2.x)
+    - app is shipped with one category (subdirectory): "default"
+  - a note can have one of the following predefined color tags:
+      "white"
+      "red"
+      "orange"
+      "yellow"
+      "green"
+      "light blue"
+      "blue"
+      "dark blue"
+      "purple"
+      "pink"
+      "brown"
+      "gray"
+    - or a custom color, stored in hexadecimal format
+      - RGB selector available in the UI
+  - a note's metadata includes the following:
+      date created
+      date added to this note collection
+      date last modified
+      author
+      associated file names (image, audio)
+      date due (reminder time)
+  - revision history file (based on git)
+
+
+reminder app
+- ability to link note to reminder
+
+  reminder detail view
+  - menu options:
+    - unlink note but keep note text
+  - linked note appears as an "iframe," showing the most recent copy of note
+
+
+screenshot app
+- burst mode
+- capture fuckups (capture process gets scheduled before the fuckup completes...?)
+- screenshotting the post-screenshot screen hides the post-screenshot view (minimap) prior to capture (like ios 11 for ipad)
+- scrolling screenshot in either direction (like panorama mode in camera app)
+- artistic mode, wherein screenshot notification icon is not shown (so that a series of screenshots can be taken without clearing this notification)
+
+
+screen write app
+- spray paint pen
+  - in addition to standard array of pens, paint brushes
+
+
+text editor app
+- sentinel character-based text formatting gets absorbed by formatted text
+  - _ triggers italics
+  - * triggers bold
+
+
+--
+reach
+- optimizable for diagonal displays
+
+  ** if resources were unlimited **
+  - phone comes with grounded cable as well
+
+
+--
+document style guide
+- acronyms are capitalized for a maximum of three letters, else lowercased
