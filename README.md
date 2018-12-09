@@ -1,7 +1,6 @@
 # m
 📴
 
-## hardware
 - Rectangular 4K display with rounded corners
 - Front camera
 - Rear camera
