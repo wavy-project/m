@@ -2,9 +2,10 @@
 📴
 
 ## hardware
-- 4K display
-- Rectangular screen with rounded corners
+- Rectangular 4K display with rounded corners
 - Fingerprint reader on back side near camera
+- Front camera
+- Back camera
 - 3.5mm headphone jack
 - USB type-C port
 - Call speaker
